@@ -1,0 +1,15 @@
+[{
+  "id": 1,
+  "priority": 1,
+  "action": {
+    "type": "modifyHeaders",
+    "requestHeaders": [{
+      "operation": "remove",
+      "header": "referer"
+    }]
+  },
+  "condition": {
+    "domains" : ["selsup.ru", "selsup-team.ru", "localhost"],
+    "excludedRequestDomains": ["mc.yandex.ru"]
+  }
+}]
